@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sofia Hair Studio — Botox / Keratin / Reconstruction</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link href="source/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="source/styles/twentytwenty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">SOFIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Послуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Ціни</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">До/Після</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Про майстра</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero position-relative">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="source/video/hero_video.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео.
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container h-100 d-flex align-items-center position-relative py-5">
+            <div class="row align-items-center w-100">
+
+                <div class="col-12 col-lg-7 text-white pe-lg-5 mb-5 mb-lg-0">
+                    <div class="badge-reconstruction text-uppercase mb-3">DNIPRO HAIR RECONSTRUCTION</div>
+
+                    <h1 class="display-3 fw-bold mb-3">
+                        Твоє волосся <br> може бути
+                        <span class="text-pink-accent">ідеальним</span>
+                    </h1>
+
+                    <p class="fs-5 mb-1">Кератин • Ботокс • Реконструкція.</p>
+                    <p class="fs-5 mb-4">Повертаю блиск та здоров’я волоссю за 1 процедуру. Гарантія результату до 6
+                        місяців.</p>
+
+                    <a href="#quiz-steps" class="btn btn-pink btn-lg me-3 mb-2">Підібрати процедуру (Тест)</a>
+                    <a href="#portfolio" class="btn btn-outline-dark-new btn-lg mb-2">Дивитись роботи</a>
+                </div>
+
+                <div class="col-lg-5 d-none d-lg-block text-center">
+                    <img src="source/image/sofia_main.png" alt="Работа Софии"
+                        class="img-fluid hero-image-new shadow-lg rounded-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Про мене -->
+    <section class="py-5 bg-dark" id="about">
+        <div class="container text-white">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                    <div class="about-img-wrapper position-relative mx-auto">
+                        <img class="img-fluid about-img about-img-square rounded-3 shadow-lg"
+                            src="source/image/about_img.jpg" alt="Майстер Соня">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-2">Привіт, я Соня! 👋</h3>
+                    <p class="fs-5 text-pink-accent fw-bold mb-4">Твій майстер реконструкції</p>
+
+                    <p class="about-text">
+                        Колись моє волосся було схоже на кульбабу при найменшій вологості. Я знаю, як це дратує! Саме
+                        тому я закохалася в процедури реконструкції — це магія, яка змінює життя.
+                    </p>
+
+                    <p class="about-text mb-4">
+                        Я не просто "мажу склад". Я — скульптор твого волосся. Підбираю формулу індивідуально, щоб ти
+                        забула про прасочку на півроку.
+                    </p>
+
+                    <div class="row about-stats pt-4 mt-4 border-top">
+                        <div class="col-6 col-md-4">
+                            <p class="stat-number fw-bold mb-0">500+</p>
+                            <p class="stat-label text-muted">Задоволених клієнток</p>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                            <p class="stat-number fw-bold mb-0">3 роки</p>
+                            <p class="stat-label text-muted">Досвіду роботи</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Слайдер -->
+    <section class="py-5" id="portfolio">
+        <div class="container text-center text-white">
+
+            <h2 class="display-5 fw-bold mb-3">Результат говорить сам за себе</h2>
+            <p class="lead mb-5 text-secondary">Потягніть повзунок вліво/вправо ✨</p>
+
+            <div class="before-after-container mx-auto">
+                <div id="comparison-slider-new" class="comparison-slider">
+                    <img src="source/image/result/before1.jpg" alt="Волосся до процедури">
+                    <img src="source/image/result/after1.jpg" alt="Результат після процедури">
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center portfolio-navigation flex-wrap mt-4" id="portfolio-nav">
+                <button class="portfolio-nav-btn active" data-work-id="1">Робота 1</button>
+                <button class="portfolio-nav-btn" data-work-id="2">Робота 2</button>
+                <button class="portfolio-nav-btn" data-work-id="3">Робота 3</button>
+                <button class="portfolio-nav-btn" data-work-id="4">Робота 4</button>
+            </div>
+
+            <div class="instagram-link-wrapper mt-5">
+                <a href="https://www.instagram.com/sofia_botox_keratin/" target="_blank" class="btn-instagram-link">
+                    <i class="fab fa-instagram"></i> Ще більше робіт в Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Тест -->
+    <section class="test-section py-5 bg-dark">
+        <div class="container test-container">
+
+            <div id="quiz-steps" class="quiz-steps">
+
+                <div class="test-header text-center">
+                    <h2 class="test-title-in">Не знаєш, що обрати?</h2>
+                    <p class="test-subtitle-in">Пройди тест за 30 секунд і отримай рекомендацію.</p>
+                </div>
+
+                <div id="step-1" class="quiz-step active">
+                    <p class="step-question">1. Який стан волосся зараз?</p>
+                    <div class="row g-3 quiz-options">
+
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="2A" data-answer="straighten">
+                                <span class="option-icon option-icon-fluffy">
+                                    <i class="fas fa-wind"></i>
+                                </span>
+                                Пухнасте, важко вкладається
+                            </button>
+                        </div>
+
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="2B" data-answer="repair">
+                                <span class="option-icon option-icon-damaged">
+                                    <i class="fas fa-cut"></i>
+                                </span>
+                                Ламке, сухе, "солома"
+                            </button>
+                        </div>
+
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="2A" data-answer="curly">
+                                <span class="option-icon option-icon-curly">
+                                    <i class="fas fa-water"></i>
+                                </span>
+                                Кучеряве, хочу рівне
+                            </button>
+                        </div>
+
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="2C" data-answer="care">
+                                <span class="option-icon option-icon-normal">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                Нормальне, немає блиску
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step-2A" class="quiz-step">
+                    <p class="step-question">2. Який рівень випрямлення потрібен?</p>
+                    <div class="row g-3 quiz-options">
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="RESULT-KERATIN" data-answer="max-straight">
+                                <span class="option-icon"><i class="fas fa-grip-lines"></i></span>
+                                Максимальне випрямлення на 100%
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="RESULT-BOTOX" data-answer="keep-volume">
+                                <span class="option-icon"><i class="fas fa-leaf"></i></span>
+                                Максимальне живлення, зберегти об'єм
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step-2B" class="quiz-step">
+                    <p class="step-question">2. Яка проблема найбільше турбує?</p>
+                    <div class="row g-3 quiz-options">
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="RESULT-RECONSTRUCTION" data-answer="broken">
+                                <span class="option-icon"><i class="fas fa-broken"></i></span>
+                                Волосся обірвалося або дуже ламке
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="RESULT-BOTOX" data-answer="dry-ends">
+                                <span class="option-icon"><i class="fas fa-tint"></i></span>
+                                Посічені кінці та сухість по довжині
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step-2C" class="quiz-step">
+                    <p class="step-question">2. Що найбільше турбує зі шкірою голови?</p>
+                    <div class="row g-3 quiz-options">
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="RESULT-PEELING" data-answer="scalp-issues">
+                                <span class="option-icon"><i class="fas fa-head-side-mask"></i></span>
+                                Свербіж, лупа, швидке забруднення
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="option-btn" data-next-step="RESULT-BOTOX" data-answer="no-shine">
+                                <span class="option-icon"><i class="fas fa-lightbulb"></i></span>
+                                Волосся тьмяне, немає блиску
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step-result" class="quiz-step quiz-result-step">
+                    <div class="result-icon-container">
+                        <svg class="result-check-icon" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 13L9 17L19 7" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="result-title">Тобі підійде <span id="recommended-service"></span>!</h3>
+                    <p class="result-subtitle">Щоб дізнатись точну вартість, надішли фото волосся мені в Telegram.</p>
+
+                    <div class="result-actions-wrapper">
+                        <a id="telegram-link" href="#" target="_blank" class="result-telegram-btn">
+                            <img src="source/image/icons/tg.png" alt="Telegram Icon" class="btn-telegram-icon">
+                            Надіслати фото для оцінки
+                        </a>
+
+                        <button class="btn-retake-test">Пройти ще раз</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- послуги -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold services-title">Мої послуги</h2>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card shadow-sm border-0 rounded-4">
+                        <div class="card-gradient-bg bg-keratin">
+                            <h4 class="card-title-lg">Кератин</h4>
+                        </div>
+                        <div class="card-content-body">
+                            <p class="card-description">
+                                Ідеальне випрямлення навіть найжорсткіших кучерів. Блиск, гладкість та захист від вологи
+                                на 3-6 місяців.
+                            </p>
+                            <ul class="card-features">
+                                <li>Випрямляє на 100%</li>
+                                <li>Прибирає "пушинки"</li>
+                                <li>Ефект 3-6 місяців</li>
+                            </ul>
+                            <div class="card-footer-price">
+                                <span class="card-price">від 900 ₴</span>
+                                <a href="https://www.instagram.com/sofia_botox_keratin/" target="_blank"
+                                    class="btn-service">ЗАПИСАТИСЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card shadow-sm border-0 rounded-4">
+                        <div class="card-gradient-bg bg-botox">
+                            <h4 class="card-title-lg">Ботокс</h4>
+                        </div>
+                        <div class="card-content-body">
+                            <p class="card-description">
+                                Глибоке живлення та розслаблення. Зберігає природний об'єм, прибирає пухнастість, робить
+                                волосся "дорожчим".
+                            </p>
+                            <ul class="card-features">
+                                <li>Живлення зсередини</li>
+                                <li>Ефект 2-3 місяці</li>
+                            </ul>
+                            <div class="card-footer-price">
+                                <span class="card-price">від 800 ₴</span>
+                                <a href="https://www.instagram.com/sofia_botox_keratin/" target="_blank"
+                                    class="btn-service">ЗАПИСАТИСЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card shadow-sm border-0 rounded-4">
+                        <div class="card-gradient-bg bg-reconstruction">
+                            <h4 class="card-title-lg">Реконструкція</h4>
+                        </div>
+                        <div class="card-content-body">
+                            <p class="card-description">
+                                Холодне відновлення для дуже пошкодженого волосся (спалений блонд, ламкість). Працює на
+                                молекулярному рівні.
+                            </p>
+                            <ul class="card-features">
+                                <li>Зупиняє ламкість</li>
+                                <li>Курсова процедура</li>
+                            </ul>
+                            <div class="card-footer-price">
+                                <span class="card-price">від 750 ₴</span>
+                                <a href="https://www.instagram.com/sofia_botox_keratin/" target="_blank"
+                                    class="btn-service">ЗАПИСАТИСЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card shadow-sm border-0 rounded-4">
+                        <div class="card-gradient-bg bg-peeling">
+                            <h4 class="card-title-lg">Пілінг</h4>
+                        </div>
+                        <div class="card-content-body">
+                            <p class="card-description">
+                                Професійна процедура для очищення шкіри голови від залишків косметики та лупи. Стимулює
+                                кровообіг.
+                            </p>
+                            <ul class="card-features">
+                                <li>Зміцнює корені</li>
+                                <li>Покращує ріст волосся</li>
+                                <li>Ефект "чистоти"</li>
+                            </ul>
+                            <div class="card-footer-price">
+                                <span class="card-price">від 500 ₴</span>
+                                <a href="https://www.instagram.com/sofia_botox_keratin/" target="_blank"
+                                    class="btn-service">ЗАПИСАТИСЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- цены -->
+    <section class="py-5 bg-dark" id="prices">
+        <div class="container text-center">
+
+            <h2 class="display-4 fw-bold text-white mb-5">Вартість</h2>
+
+            <div class="price-table-wrapper mx-auto">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th class="table-header-length">ДОВЖИНА</th>
+                            <th class="table-header-service">КЕРАТИН</th>
+                            <th class="table-header-service">БОТОКС</th>
+                            <th class="table-header-service">РЕКОНСТРУКЦІЯ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="length-cell">До плечей (Каре)</td>
+                            <td class="price-cell">900 ₴</td>
+                            <td class="price-cell">800 ₴</td>
+                            <td class="price-cell">750 ₴</td>
+                        </tr>
+                        <tr>
+                            <td class="length-cell">До лопаток</td>
+                            <td class="price-cell">1200 ₴</td>
+                            <td class="price-cell">1100 ₴</td>
+                            <td class="price-cell">1000 ₴</td>
+                        </tr>
+                        <tr>
+                            <td class="length-cell">Нижче лопаток</td>
+                            <td class="price-cell">1600 ₴</td>
+                            <td class="price-cell">1400 ₴</td>
+                            <td class="price-cell">1300 ₴</td>
+                        </tr>
+                        <tr>
+                            <td class="length-cell">Нижче пояса</td>
+                            <td class="price-cell ">1900 ₴</td>
+                            <td class="price-cell">1700 ₴</td>
+                            <td class="price-cell">1600 ₴</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="price-note mt-3 text-secondary">
+                    * Ціна може змінюватися залежно від густоти (+200-300 грн). Точна вартість по фото.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts-section" id="contacts">
+    
+    <div class="mobile-info-block">
+        <div class="map-popup-card">
+            <h3 class="studio-name">Sofia Hair Studio</h3>
+            <p class="schedule-text">
+                <i class="fas fa-clock"></i> Пн-Сб: 10:00 - 20:00
+            </p>
+
+            <div class="contact-buttons-group">
+                <a href="https://www.instagram.com/sofia_botox_keratin" target="_blank" class="btn-contact btn-instagram-direct">
+                    <i class="fab fa-instagram"></i> Instagram Direct
+                </a>
+                <a href="https://t.me/tsofaaa" target="_blank" class="btn-contact btn-telegram">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+                <a href="viber://chat?number=%2B380507259667" target="_blank" class="btn-contact btn-viber">
+                    <i class="fab fa-viber"></i> Viber
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-map-wrapper">
+        
+        <div id="google-map-embed">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.4491961300423!2d35.036615999999995!3d48.467096899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2e44e5096b1%3A0x9101589b309adc9e!2z0LLRg9C70LjRhtGPINCb0LDQt9Cw0YDRjyDQk9C70L7QsdC4LCA5LCDQlNC90ZbQv9GA0L4sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1suk!2sua!4v1767043681484!5m2!1suk!2sua" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="map-info-overlay">
+            
+            <div class="map-popup-card">
+                <h3 class="studio-name">Sofia Hair Studio</h3>
+                <p class="schedule-text">
+                    <i class="fas fa-clock"></i> Пн-Сб: 10:00 - 20:00
+                </p>
+
+                <div class="contact-buttons-group">
+                    <a href="https://www.instagram.com/sofia_botox_keratin" target="_blank" class="btn-contact btn-instagram-direct">
+                        <i class="fab fa-instagram"></i> Instagram Direct
+                    </a>
+                    <a href="https://t.me/tsofaaa" target="_blank" class="btn-contact btn-telegram">
+                        <i class="fab fa-telegram-plane"></i> Telegram
+                    </a>
+                    <a href="viber://chat?number=%2B380507259667" target="_blank" class="btn-contact btn-viber">
+                        <i class="fab fa-viber"></i> Viber
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer class="main-footer text-center py-3">
+        © 2025 Sofia Hair Studio. Всі права захищені.
+    </footer>
+</section>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..."
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="source/script/jquery.event.move.js"></script>
+    <script src="source/script/jquery.twentytwenty.js"></script>
+
+    <script src="source/script/script.js"></script>
+</body>
+
+</html>
