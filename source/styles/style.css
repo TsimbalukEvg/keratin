@@ -512,7 +512,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/keratin.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('source/image/keratin.jpg') !important; 
 }
 
 .bg-botox {
@@ -520,7 +520,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/botox.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('source/image/botox.jpg') !important; 
 }
 
 .bg-reconstruction {
@@ -528,7 +528,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/reconstruction.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('source/image/reconstruction.jpg') !important; 
 }
 
 .bg-peeling {
@@ -536,7 +536,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/peeling.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('source/image/peeling.jpg') !important; 
 }
 
 /* Заголовок у градієнтній частині */
@@ -903,4 +903,5 @@ footer {
     margin-top: 0; /* Прибираємо відступ, оскільки футер складається з двох блоків */
     padding: 0;
 }
+
 
