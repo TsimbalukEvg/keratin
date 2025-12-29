@@ -513,7 +513,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/кератин.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('/source/image/keratin.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
 }
 
 .bg-botox {
@@ -521,7 +521,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/ботокс.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('/source/image/botox.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
 }
 
 .bg-reconstruction {
@@ -529,7 +529,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/реконструкція.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('/source/image/reconstruction.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
 }
 
 .bg-peeling {
@@ -537,7 +537,7 @@ body {
         to bottom, 
         rgba(0, 0, 0, 0.5) 0%, 
         rgba(33, 33, 33, 1) 100% 
-    ), url('/source/image/Пілінг.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
+    ), url('/source/image/peeling.jpg') !important; /* ВИПРАВЛЕНО: / на початку і !important */
 }
 
 /* Заголовок у градієнтній частині */
@@ -644,11 +644,13 @@ body {
 /* 2. СЕКЦІЯ "ТЕСТ: НЕ ЗНАЄШ, ЩО ОБРАТИ?" (ФІНАЛЬНИЙ ДИЗАЙН) */
 /* ==================================== */
 
+/* --- ЗМІННІ --- */
 :root {
     --pink-color: #ff7ab8;
     --darker-pink: #e859a5; 
 }
 
+/* --- ОСНОВНІ КОНТЕЙНЕРИ --- */
 .test-section {
     background-color: #1a1a1a; 
     padding: 100px 0;
@@ -659,23 +661,23 @@ body {
     margin: 0 auto;
 }
 
-/* Контейнер кроків тесту (ФІКСАЦІЯ ВИСОТИ ТА ПОЗИЦІОНУВАННЯ) */
+/* Контейнер кроків тесту (для анімації на десктопі) */
 .quiz-steps {
     background-color: #212121; 
     padding: 40px;
     border-radius: 12px;
     
     position: relative; 
-    min-height: 450px; /* ФІКСОВАНА ВИСОТА */
+    min-height: 450px; /* Фіксована висота для анімації */
     overflow: hidden; 
 }
 
-/* Заголовки, інтегровані всередину темного блоку */
+/* --- ЗАГОЛОВКИ --- */
 .test-header {
     text-align: center;
     margin-bottom: 30px; 
     position: relative; 
-    z-index: 2; /* Забезпечуємо, що заголовок завжди буде поверх кроків */
+    z-index: 2; /* Завжди поверх кроків */
 }
 .test-title-in { 
     color: #fff;
@@ -689,18 +691,15 @@ body {
     margin-bottom: 30px;
 }
 
-/* Налаштування кроку тесту (АБСОЛЮТНЕ ПОЗИЦІОНУВАННЯ) */
+/* --- КРОКИ ТЕСТУ І АНІМАЦІЯ --- */
 .quiz-step {
     position: absolute; 
-    
-    /* ВИПРАВЛЕННЯ НАКЛАДАННЯ: Починаємо кроки нижче заголовка. 
-       Це компенсує висоту заголовків + внутрішній паддінг. */
+    /* Починаємо кроки нижче заголовка */
     top: 150px; 
     
     left: 0;
     width: 100%;
-    /* Додаємо горизонтальні паддінги, але прибираємо верхній/нижній, 
-       бо top: 150px вже є верхнім відступом */
+    /* Горизонтальні паддінги */
     padding: 0 40px; 
     box-sizing: border-box;
     
@@ -710,19 +709,17 @@ body {
     transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out; 
 }
 
-/* Активний крок */
 .quiz-step.active {
     opacity: 1; 
     visibility: visible; 
 }
 
-/* Видаляємо зайвий верхній відступ у питанні, щоб не було подвійного відступу */
 .quiz-step .step-question {
     margin-top: 0; 
     margin-bottom: 30px;
 }
 
-/* Стилі кнопок (залишаються без змін) */
+/* --- СТИЛІ КНОПОК ТА ІКОНОК --- */
 .option-btn {
     width: 100%;
     min-height: 80px; 
@@ -730,7 +727,14 @@ body {
     color: #fff;
     border: 1px solid #333333; 
     border-radius: 8px;
-    /* ... (інші стилі кнопок) ... */
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center; /* Вирівнювання іконки і тексту */
 }
 
 .option-btn.selected {
@@ -738,30 +742,32 @@ body {
     color: var(--pink-color); 
 }
 
-/* ... (інші стилі для іконок та результату) ... */
-
 .option-icon {
     font-size: 26px; 
     margin-right: 15px;
     line-height: 1;
-   color: var(--pink-color); 
+    color: var(--pink-color); /* Завжди рожевий колір */
 }
 
-.option-btn.selected .option-icon {
-    color: var(--pink-color); 
-}
-
-/* СТИЛІЗАЦІЯ КРОКУ РЕЗУЛЬТАТУ */
+/* --- СТИЛІЗАЦІЯ КРОКУ РЕЗУЛЬТАТУ --- */
 
 .quiz-result-step {
     text-align: center;
     padding: 20px 0 0 0; 
 }
 
+/* Контейнер для вирівнювання кнопок (в один рядок) */
+.result-actions-wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Ключ: вертикальне центрування */
+    margin-bottom: 20px; 
+}
+
 .result-icon-container {
     width: 60px;
     height: 60px;
-    background-color: #1e8449;
+    background-color: #1e8449; /* Зелений колір */
     border-radius: 50%;
     margin: 0 auto 30px auto;
     display: flex;
@@ -780,6 +786,7 @@ body {
     color: var(--pink-color);
 }
 
+/* Стилі для великої рожевої кнопки Telegram */
 .result-telegram-btn {
     display: inline-flex;
     align-items: center;
@@ -790,18 +797,90 @@ body {
     padding: 12px 30px;
     font-weight: bold;
     transition: background-color 0.3s;
-    margin-bottom: 20px;
+    /* Відступ до кнопки "Пройти ще раз" */
+    margin-right: 20px; 
 }
 
+/* Стилі для PNG-іконки Telegram */
+.btn-telegram-icon {
+    width: 24px; 
+    height: 24px; 
+    margin-right: 10px;
+    object-fit: contain; 
+}
+
+/* Стилі для посилання "Пройти ще раз" */
 .btn-retake-test {
     background: none;
     border: none;
-    color: #aaa;
+    color: #999;
     font-size: 14px;
     cursor: pointer;
     transition: color 0.3s;
+    white-space: nowrap; 
 }
 
+/* ==================================== */
+/* 3. МОБІЛЬНА АДАПТАЦІЯ (MEDIA QUERIES) */
+/* ==================================== */
+
+@media (max-width: 768px) {
+    
+    .test-section {
+        padding: 50px 0; 
+    }
+
+    /* 1. АДАПТАЦІЯ ГОЛОВНОГО КОНТЕЙНЕРА ТЕСТУ */
+    .quiz-steps {
+        padding: 20px; 
+        min-height: auto; /* ЗНІМАЄМО ФІКСОВАНУ ВИСОТУ */
+        height: auto;
+    }
+    
+    /* 2. АДАПТАЦІЯ КРОКІВ ТЕСТУ */
+    .quiz-step {
+        position: relative; 
+        top: 0 !important; 
+        padding: 0 5px; 
+        
+        /* Вимикаємо анімацію */
+        opacity: 1; 
+        visibility: visible;
+        transition: none; 
+        display: none; 
+    }
+    .quiz-step.active {
+        display: block; 
+    }
+
+    /* 3. ЗМЕНШЕННЯ ШРИФТІВ ТА ВІДСТУПІВ */
+    .test-title-in {
+        font-size: 28px; 
+    }
+    .step-question {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .option-btn {
+        min-height: 70px; 
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+    .option-icon {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+    
+    /* Додатково: На мобільних вирівнюємо кнопки одну під одною */
+    .result-actions-wrapper {
+        flex-direction: column; /* Кнопки одна під одною */
+        align-items: center;
+    }
+    .result-telegram-btn {
+        margin-right: 0;
+        margin-bottom: 15px; /* Додаємо відступ між кнопками */
+    }
+}
 
 /* BENEFITS SECTION (НОВІ СТИЛІ) */
 .bg-light-pink {
